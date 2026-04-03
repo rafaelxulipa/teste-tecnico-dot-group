@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dot — Aprenda do Zero ao Avançado</title>
+  <meta name="description" content="Plataforma de ensino online. Aprenda com projetos reais e evolua na sua carreira em tecnologia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <main id="main-content">
+
+    <!-- ========== 1. HERO ========== -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="container hero__inner">
+
+        <div class="hero__col-left">
+          <h1 class="hero__title">
+            Aprenda na prática,<br />
+            evolua de <em class="hero__title--accent">verdade</em>
+          </h1>
+          <p class="hero__description">
+            Cursos criados por quem está no mercado. Conteúdo direto ao ponto, projetos reais e uma comunidade que aprende junto com você.
+          </p>
+          <a href="#player-section" class="btn btn--green btn--lg">Começar agora &#8594;</a>
+        </div>
+
+        <div class="hero__col-right">
+          <img
+            src="assets/images/Container.png"
+            alt="Mockup do dashboard da plataforma"
+            class="hero__mockup"
+            loading="eager"
+            width="700"
+            height="440"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== 2. SEÇÃO PLAYER ========== -->
+    <section class="player-section" id="player-section" aria-label="Aula em destaque">
+      <div class="container">
+
+        <h2 class="player-section__title">
+          Veja como é uma aula antes de se inscrever
+        </h2>
+        <p class="player-section__desc">
+          Transparência total: assista a uma aula completa gratuitamente e sinta o ritmo, a didática e a profundidade do conteúdo antes de tomar sua decisão.
+        </p>
+
+        <!-- Monitor frame com YouTube embed -->
+        <div class="monitor-frame" aria-label="Player de vídeo da aula">
+          <div class="monitor-frame__bezel">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/Hgg7M3kSqyE"
+                title="Aula em destaque"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="monitor-frame__stand"></div>
+          <div class="monitor-frame__base"></div>
+        </div>
+
+        <!-- 2 colunas: imagem + texto -->
+        <div class="player-section__bottom">
+          <div class="player-section__img-col">
+            <img
+              src="assets/images/imagem2.png"
+              alt="Vista do oceano ao entardecer"
+              class="player-section__ocean-img"
+              loading="lazy"
+              width="700"
+              height="450"
+            />
+          </div>
+          <div class="player-section__text-col">
+            <p>Acreditamos que aprender tecnologia não precisa ser complicado. Nossa metodologia foi desenhada para que você absorva conceitos complexos de forma gradual, construindo uma base sólida que sustenta o crescimento contínuo.</p>
+            <p>Cada módulo é pensado para simular desafios reais do mercado. Você sai da plataforma não apenas com conhecimento teórico, mas com um portfólio de projetos que comprova suas habilidades para qualquer recrutador.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== 3. SLIDER ========== -->
+    <section class="slider-section" id="slider-section" aria-label="Slides de imagens">
+      <div class="slider" id="mainSlider" aria-roledescription="carrossel">
+
+        <!-- Imagem full-width -->
+        <div class="slider__track-wrap">
+          <div class="slider__track" id="sliderTrack" aria-live="polite">
+            <div class="slider__slide" role="group" aria-roledescription="slide" aria-label="Slide 1 de 3">
+              <img src="assets/images/image1-carrossel.png" alt="Trilha em meio à floresta — símbolo de jornada e aprendizado" class="slider__img" loading="lazy" width="1200" height="500" />
+            </div>
+            <div class="slider__slide" role="group" aria-roledescription="slide" aria-label="Slide 2 de 3">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=500&fit=crop" alt="Pico de montanha acima das nuvens — supere seus limites" class="slider__img" loading="lazy" width="1200" height="500" />
+            </div>
+            <div class="slider__slide" role="group" aria-roledescription="slide" aria-label="Slide 3 de 3">
+              <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&h=500&fit=crop" alt="Oceano ao horizonte — possibilidades sem limite" class="slider__img" loading="lazy" width="1200" height="500" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles abaixo: [‹] [● ○ ○] [›] -->
+        <div class="slider__controls">
+          <button class="slider__btn slider__btn--prev" id="sliderPrev" aria-label="Slide anterior" disabled>&#8249;</button>
+          <div class="slider__dots" id="sliderDots" role="tablist" aria-label="Navegacao de slides"></div>
+          <button class="slider__btn slider__btn--next" id="sliderNext" aria-label="Proximo slide">&#8250;</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== 4. SEÇÃO ESCURA ========== -->
+    <section class="dark-section" aria-label="Conteudo em destaque">
+      <div class="container">
+
+        <!-- Parte A: card de texto escuro -->
+        <div class="dark-section__text">
+          <div class="dark-section__card">
+            <p>A dot nasceu da frustração de profissionais que aprenderam tecnologia do jeito difícil. Acreditamos que um bom curso não entrega apenas vídeos — entrega contexto, raciocínio e a confiança de quem já resolveu esse problema antes. Cada aula é uma conversa entre quem sabe e quem quer saber.</p>
+          </div>
+        </div>
+
+        <!-- Parte B: 3 cards interativos -->
+        <div class="cards-grid" aria-label="Cards interativos">
+
+          <article class="icard" data-open="false" aria-label="Trilhas personalizadas">
+            <div class="icard__closed">
+              <div class="icard__icon" aria-hidden="true">🗺</div>
+              <button class="btn btn--outline icard__open-btn" aria-expanded="false" aria-controls="icard-body-1">Abrir</button>
+            </div>
+            <div class="icard__open" id="icard-body-1" hidden aria-label="Conteudo sobre trilhas personalizadas">
+              <p class="icard__content">Monte seu próprio percurso de aprendizado. Nosso sistema identifica seu nível atual e sugere a sequência ideal de cursos para que você avance sem lacunas e sem tempo perdido.</p>
+              <button class="btn btn--outline-white icard__close-btn" aria-expanded="true" aria-controls="icard-body-1">Fechar</button>
+            </div>
+          </article>
+
+          <article class="icard" data-open="true" aria-label="Mentoria ao vivo">
+            <div class="icard__closed" style="display: none;">
+              <div class="icard__icon" aria-hidden="true">🎙</div>
+              <button class="btn btn--outline icard__open-btn" aria-expanded="true" aria-controls="icard-body-2">Abrir</button>
+            </div>
+            <div class="icard__open" id="icard-body-2" aria-label="Conteudo sobre mentoria ao vivo">
+              <p class="icard__content">Toda semana, sessões ao vivo com especialistas do mercado para tirar dúvidas, revisar código e discutir tendências. Você nunca fica travado por mais de 24 horas.</p>
+              <button class="btn btn--outline-white icard__close-btn" aria-expanded="true" aria-controls="icard-body-2">Fechar</button>
+            </div>
+          </article>
+
+          <article class="icard" data-open="false" aria-label="Certificado reconhecido">
+            <div class="icard__closed">
+              <div class="icard__icon" aria-hidden="true">🏅</div>
+              <button class="btn btn--outline icard__open-btn" aria-expanded="false" aria-controls="icard-body-3">Abrir</button>
+            </div>
+            <div class="icard__open" id="icard-body-3" hidden aria-label="Conteudo sobre certificado">
+              <p class="icard__content">Ao concluir cada trilha, você recebe um certificado digital verificável, aceito por mais de 300 empresas parceiras. Compartilhe no LinkedIn e seja encontrado pelos recrutadores certos.</p>
+              <button class="btn btn--outline-white icard__close-btn" aria-expanded="true" aria-controls="icard-body-3">Fechar</button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== 5. RECURSO DE DESTAQUE ========== -->
+    <section class="highlight-section" aria-label="Recurso de destaque">
+      <div class="container">
+        <h2 class="highlight-section__title">
+          Aprenda no seu ritmo, sem abrir mão da qualidade
+        </h2>
+        <p class="highlight-section__desc">
+          Acesso vitalício ao conteúdo, atualizações gratuitas sempre que o mercado mudar e suporte de uma comunidade ativa que celebra cada conquista sua.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== 6. PLAYER DE AUDIO ========== -->
+    <section class="audio-section" aria-label="Player de audio">
+      <div class="container">
+
+        <div class="audio-player" role="region" aria-label="Player de audio">
+
+          <audio id="audioEl" preload="metadata" aria-hidden="true">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+            Seu navegador nao suporta o elemento de audio.
+          </audio>
+
+          <div class="audio-player__controls">
+            <button class="audio-btn audio-btn--play" id="audioPlayBtn" aria-label="Reproduzir">
+              <svg class="icon-play" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M6 4l12 6-12 6V4z"/>
+              </svg>
+              <svg class="icon-pause" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" style="display:none">
+                <rect x="4" y="3" width="4" height="14"/>
+                <rect x="12" y="3" width="4" height="14"/>
+              </svg>
+            </button>
+
+            <div class="audio-player__progress-group">
+              <div
+                class="audio-progress-bar"
+                id="audioProgressBar"
+                role="slider"
+                aria-label="Progresso do audio"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+                tabindex="0"
+              >
+                <div class="audio-progress-bar__fill" id="audioProgressFill"></div>
+                <div class="audio-progress-bar__thumb" id="audioProgressThumb"></div>
+              </div>
+              <span class="audio-time" id="audioCurrentTime" aria-label="Tempo atual">03:03</span>
+            </div>
+
+            <div class="audio-player__volume-group" aria-label="Controle de volume">
+              <button class="audio-btn audio-btn--volume" id="audioMuteBtn" aria-label="Silenciar">
+
+                <svg class="icon-vol-on" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true">
+                  <path d="M3 6.5v5h3l4 3.5v-12L6 6.5H3z"/>
+                  <path d="M12.5 4.5a6 6 0 0 1 0 9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                  <path d="M14.5 2.5a9 9 0 0 1 0 13" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+                <svg class="icon-vol-off" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true" style="display:none">
+                  <path d="M3 6.5v5h3l4 3.5v-12L6 6.5H3z"/>
+                  <line x1="13" y1="7" x2="17" y2="11" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="17" y1="7" x2="13" y2="11" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </button>
+              <input
+                type="range"
+                class="audio-volume-slider"
+                id="audioVolumeSlider"
+                min="0"
+                max="1"
+                step="0.05"
+                value="1"
+                aria-label="Volume"
+              />
+              <span class="audio-settings" aria-hidden="true">&#9881;</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== 7. ATIVIDADE DISCURSIVA ========== -->
+    <section class="activity-section activity-section--discursiva" id="actDiscursiva" aria-label="Atividade Discursiva">
+      <div class="container">
+
+        <div class="activity-card">
+          <div class="activity-card__header">
+            <div class="activity-card__icon" aria-hidden="true">
+              <img src="assets/images/discursiva.svg" alt="" width="40" height="40" />
+            </div>
+            <h2 class="activity-card__title">Atividade discursiva</h2>
+          </div>
+          <div class="activity-card__body">
+            <p class="activity-desc">
+              Em suas próprias palavras, explique qual a diferença entre programação orientada a objetos e programação funcional. Cite pelo menos um cenário em que cada abordagem seria mais vantajosa.
+            </p>
+            <fieldset class="activity-fieldset">
+              <legend class="visually-hidden">Atividade discursiva — escreva sua resposta</legend>
+              <textarea
+                id="discursivaTextarea"
+                class="activity-textarea"
+                placeholder="Digite sua resposta aqui..."
+                rows="5"
+                aria-describedby="discursivaFeedback"
+              ></textarea>
+            </fieldset>
+            <div
+              class="activity-feedback"
+              id="discursivaFeedback"
+              role="alert"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <div class="activity-feedback__inner">
+                <div class="activity-feedback__text">
+                  <strong class="activity-feedback__title">É isso aí!</strong>
+                  <span class="activity-feedback__desc">Sua resposta foi registrada. Nossos instrutores vão revisá-la em breve.</span>
+                </div>
+                <button class="activity-feedback__close" id="discursivaFeedbackClose" aria-label="Fechar feedback">&times;</button>
+              </div>
+            </div>
+            <div class="activity-actions">
+              <button class="btn btn--responder" id="discursivaResponder" disabled aria-disabled="true">Responder</button>
+              <button class="btn btn--alterar" id="discursivaAlterar" disabled aria-disabled="true">Alterar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== 8. ATIVIDADE OBJETIVA ========== -->
+    <section class="activity-section activity-section--objetiva" id="actObjetiva" aria-label="Atividade Objetiva">
+      <div class="container">
+
+        <div class="activity-card">
+          <div class="activity-card__header">
+            <div class="activity-card__icon" aria-hidden="true">
+              <img src="assets/images/objetiva.svg" alt="" width="40" height="40" />
+            </div>
+            <h2 class="activity-card__title">Atividade Objetiva</h2>
+          </div>
+          <div class="activity-card__body">
+            <p class="activity-desc">
+              Qual das alternativas descreve corretamente o conceito de <strong>closure</strong> em JavaScript?
+            </p>
+            <fieldset class="activity-options" id="objetivaOptions">
+              <legend class="visually-hidden">Selecione uma resposta</legend>
+
+              <label class="option-item" for="opt-a">
+                <input type="checkbox" id="opt-a" value="a" class="option-checkbox" />
+                <span class="option-text">A) É um método nativo que fecha a conexão com o servidor após uma requisição HTTP.</span>
+              </label>
+
+              <label class="option-item selected" for="opt-b">
+                <input type="checkbox" id="opt-b" value="b" class="option-checkbox" checked />
+                <span class="option-text">B) É uma função que retém acesso ao escopo em que foi criada, mesmo após esse escopo ter encerrado sua execução.</span>
+              </label>
+
+              <label class="option-item" for="opt-c">
+                <input type="checkbox" id="opt-c" value="c" class="option-checkbox" />
+                <span class="option-text">C) É um operador que compara dois valores sem conversão de tipo, retornando sempre booleano.</span>
+              </label>
+
+              <label class="option-item" for="opt-d">
+                <input type="checkbox" id="opt-d" value="d" class="option-checkbox" />
+                <span class="option-text">D) É uma estrutura de dados imutável usada para armazenar pares chave-valor no navegador.</span>
+              </label>
+
+            </fieldset>
+            <div
+              class="activity-feedback"
+              id="objetivaFeedback"
+              role="alert"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <div class="activity-feedback__inner">
+                <div class="activity-feedback__text">
+                  <strong class="activity-feedback__title">Tente novamente!</strong>
+                  <span class="activity-feedback__desc">Revise o conceito de escopo léxico e tente uma nova alternativa.</span>
+                </div>
+                <button class="activity-feedback__close" id="objetivaFeedbackClose" aria-label="Fechar feedback">&times;</button>
+              </div>
+            </div>
+            <div class="activity-actions">
+              <button class="btn btn--responder" id="objetivaResponder" disabled aria-disabled="true">Responder</button>
+              <button class="btn btn--alterar" id="objetivaAlterar" disabled aria-disabled="true">Alterar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== 9. FAQ ========== -->
+    <section class="faq-section" id="faq" aria-label="Perguntas frequentes">
+      <div class="container">
+        <div class="faq-section__header">
+          <h2 class="faq-section__heading">Perguntas frequentes</h2>
+          <p class="faq-section__desc">Tudo o que você precisa saber antes de começar sua jornada com a dot.</p>
+        </div>
+        <div class="faq-list">
+
+          <details class="faq-item" open>
+            <summary class="faq-summary">
+              <span>Preciso ter experiência prévia em programação?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Não! Nossos cursos foram desenhados para acolher quem está começando do zero. Você vai construir sua base passo a passo, com linguagem acessível e exemplos do mundo real — sem jargão desnecessário, sem pular etapas.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>Quanto tempo preciso dedicar por semana?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Recomendamos entre 6 e 10 horas semanais para um progresso consistente, mas o ritmo é totalmente seu. O acesso é vitalício, então você estuda quando e onde quiser, sem pressão de prazos.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>Os certificados são reconhecidos pelo mercado?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Sim. Nossos certificados são digitalmente verificáveis e reconhecidos por mais de 300 empresas parceiras. Cada certificado inclui um link de validação que pode ser compartilhado diretamente no LinkedIn ou enviado para recrutadores.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>Posso acessar o conteúdo pelo celular?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Sim, a plataforma é totalmente responsiva. Você assiste às aulas, resolve atividades e acompanha seu progresso pelo smartphone ou tablet, sem perder nenhuma funcionalidade em relação ao desktop.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>E se eu travar em algum conteúdo?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Nossa comunidade no Discord está sempre ativa, com alunos e instrutores prontos para ajudar. Além disso, realizamos sessões de mentoria ao vivo toda semana, onde você pode levar dúvidas diretamente para um especialista.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== 10. FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="dot Digital Group" class="footer__logo-img" height="40" />
+      </div>
+      <p class="footer__copy">&copy; 2026 DOT Digital Group. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
